@@ -30,7 +30,7 @@ namespace SmartAudioFileManager
             {
                 if (AudioDbConnection == null)
                 {
-                    Check_Create_DB(Directory.GetCurrentDirectory(), DbString);
+                    CheckCreateDB(Directory.GetCurrentDirectory(), DbString);
 
                     try
                     {
@@ -46,7 +46,7 @@ namespace SmartAudioFileManager
             }
         }
 
-        private static void Check_Create_DB(string dbPath, string dbName)
+        private static void CheckCreateDB(string dbPath, string dbName)
         {
             string FullPath = dbPath + "\\" + dbName;
 
